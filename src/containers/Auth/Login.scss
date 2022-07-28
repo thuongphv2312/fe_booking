@@ -1,0 +1,90 @@
+.login-background {
+  height: 100vh;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: white;
+    height: 50%;
+    .login-content {
+      width: 80%;
+      .login-form {
+        .row {
+          margin-left: 0;
+        }
+        .login-text {
+          text-align: center;
+          font-weight: 600;
+          font-size: 24px;
+        }
+        .form-group {
+          label {
+            margin-bottom: 10px;
+          }
+          input {
+            height: 35px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            background-color: #e6e6e6;
+          }
+          margin-bottom: 20px;
+        }
+        .password {
+          .image-hide-show {
+            height: 15px;
+            text-align: right;
+          }
+          .error-message {
+            color: red;
+            height: 5px;
+          }
+
+          .icon-password {
+            position: relative;
+            top: -28px;
+          }
+          .icon-password:hover {
+            cursor: pointer;
+          }
+        }
+        .button-submit {
+          height: 35px;
+          border-radius: 10px;
+          background-color: #57b846;
+          outline: none;
+          border: none;
+          color: #fff;
+        }
+        .forgot-pass {
+          text-decoration: none;
+          color: #6c757d;
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .login-container {
+    width: 40%;
+  }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .login-container {
+    width: 60%;
+  }
+}
+/* Mobile */
+@media (max-width: 739px) {
+  .login-container {
+    width: 80%;
+  }
+}
